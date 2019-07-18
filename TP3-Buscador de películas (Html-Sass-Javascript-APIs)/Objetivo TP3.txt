@@ -1,0 +1,1 @@
+Desarrollar una página según el model de mockup dado.

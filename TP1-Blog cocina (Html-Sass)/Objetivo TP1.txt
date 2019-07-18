@@ -1,0 +1,1 @@
+Generar una página según el modelo dado.

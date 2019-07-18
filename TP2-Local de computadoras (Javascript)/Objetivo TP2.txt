@@ -1,0 +1,1 @@
+Desarrollar las funciones solicitadas para el sistema de registro de ventas de una empresa de  computadoras.
