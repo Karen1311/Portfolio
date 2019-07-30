@@ -1,0 +1,45 @@
+.banner {
+    visibility: visible;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 25px;
+    height: 450px;             
+    position: relative;
+    transition: 0.5s;
+    h1 {
+        width: 100%;
+        position: absolute;
+        top: 200px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: .5px;
+    }
+    img {
+        display: block;
+        margin-top: 50px;
+        width: 100%;
+        opacity: 0.5;
+        @media(max-width: 400px){
+            margin-left: -10%;
+            width: 120%;
+        }
+    }
+    @media(max-width: 768px){
+        margin-top: 0px;
+        overflow: hidden;
+        height: 200px;
+        h1 {
+            top: 90px;
+            font-size: 22px;
+        }
+    }
+}
+.hiddenBanner {
+    visibility: hidden;
+    height: 0px;
+    transition: 0.5s;
+    img {
+        display: none;
+    }
+}

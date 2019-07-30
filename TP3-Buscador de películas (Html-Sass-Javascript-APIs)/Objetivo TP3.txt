@@ -1,1 +1,1 @@
-Desarrollar una página según el model de mockup dado.
+Desarrollar una buscador de películas según el modelo dado.

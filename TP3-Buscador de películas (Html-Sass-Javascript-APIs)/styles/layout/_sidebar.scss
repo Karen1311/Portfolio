@@ -1,0 +1,199 @@
+#menu {
+    position: fixed;
+    z-index: 4;
+    background-color: white;
+    width: 95px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    @media(max-width: 768px){
+        display: none;
+    }
+    #logo {
+        width: 100%;
+        height: 75px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        img {
+            margin: 0 auto;
+            width: 37%;
+            height: auto;
+            transition: .5s;
+        }
+    }
+    #logo:hover {
+        img {
+            transform: scale(1.03);
+        }
+    }
+    .categoryButton {
+        width: 100%;
+        height: 100px;
+        text-align: center; 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid whitesmoke;
+        box-sizing: border-box;
+        cursor: pointer;
+        a {
+            text-decoration: none;
+        }
+        div {
+            margin: 0 auto;
+            opacity: 0.6;
+            transition: .5s;
+            img {
+                width: 21%;
+                margin-bottom: 5px;
+            }
+            h4 {
+                font-size: 9px;
+                line-height: 9px;
+                font-weight: 100;
+                color: black;
+                margin: 0px;
+            }
+        }
+        @media(max-width: 768px){
+            display: none;
+        }
+    }
+    .categoryButton:hover div {
+        opacity: 1;
+    }
+}
+
+// Menú para mobile
+
+#search-mobile {
+    @media(min-width: 768px){
+        display: none;
+    }
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    #logo-mobile{
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        img {
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            transition: .5s;
+            opacity: 1;
+        }
+    }
+    #logo-mobile:hover {
+        img {
+            transform: scale(1.03);
+        }
+    }
+    img {
+        width: 14px;
+        height: 14px;
+        margin: 18px 0px 18px 19px;
+        opacity: 0.6;
+    }
+    input {
+        border: 0px;
+        outline: none;
+        height: 12px;
+        width: 80%;
+        padding: 19px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    #hamburguerMenu {
+        width: 50px;
+        background-color: white; 
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // text-align: center;
+        border-left: 1px solid whitesmoke;
+        //font-size: 20px;
+        //font-weight: 100;
+        //color: gray;
+        .line {
+            background-color: gray;
+            width: 25px;
+            height: 2px;
+            margin: 3px 0;
+            transition: 1s;
+            // transform: rotate(45deg);
+            // transform: rotate(-45deg);
+        }
+    }
+}
+
+#backMenu-mobile {
+    @media(min-width: 768px){
+        display: none;
+    }
+    display: none;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    position: fixed;
+    top: 50px;
+    #menu-mobile {
+        z-index: 5;
+        position: fixed;
+        background-color: whitesmoke;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .categoryButton-mobile {
+            width: 50%;
+            height: 100px;
+            text-align: center; 
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid white;
+            box-sizing: border-box;
+            cursor: pointer;
+            a {
+                text-decoration: none;
+            }
+            div {
+                margin: 0 auto;
+                opacity: 0.6;
+                transition: .5s;
+                img {
+                    width: 6%;
+                    margin-bottom: 9px;
+                }
+                h4 {
+                    font-size: 10px;
+                    line-height: 9px;
+                    font-weight: 100;
+                    color: black;
+                    margin: 0px;
+                }
+            }
+        }
+        .categoryButton-mobile:hover div {
+            opacity: 1;
+        }
+    }
+}
